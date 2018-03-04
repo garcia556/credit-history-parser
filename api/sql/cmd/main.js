@@ -1,0 +1,22 @@
+"use strict";
+
+var root = {};
+
+//////////////////////////////////////////////////////////////////////
+
+root.CREATE_APPLICATION =
+`insert into application
+values
+(
+	default,
+	$(id),
+	default,
+	default
+)
+returning
+	application_id`;
+
+//////////////////////////////////////////////////////////////////////
+
+module.exports = root;
+

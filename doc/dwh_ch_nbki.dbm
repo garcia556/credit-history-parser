@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.1-alpha1" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="ps_owner">
+<role name="ps_owner">
+</role>
+
+<database name="ps" encoding="UTF8" lc-collate="en_US.UTF-8" lc-ctype="en_US.UTF-8">
+	<role name="ps_owner"/>
+	<tablespace name="pg_default"/>
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<schema name="dwh" rect-visible="true" fill-color="#e1e1e1" sql-disabled="true">
+	<role name="ps_owner"/>
+</schema>
+
+<table name="nbki_personreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="380" y="20"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="birthdt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="countrybirth">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="deathflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="first">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="gender">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="gendertext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="maritalstatus">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="maritalstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="name1">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="nationality">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="nationalitytext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="numdependants">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="oldfirstname">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="oldsurname">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="paternal">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="placeofbirth">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_addressreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="380" y="380"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="addresstype">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="addresstypetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="addrsincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="apartment">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="block">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="building">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="city">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="countrycode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="countrycodetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="district">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="housenumber">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="postal">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="prov">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="provtext">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="resstat">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="resstattext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="serialnum">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="street">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="streettype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="streettypetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="subdistrict">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="suppressflag">
+		<type name="character varying" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_phonereply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="380" y="780"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="number">
+		<type name="character varying" length="14"/>
+	</column>
+	<column name="phonetype">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="phonetypetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_employmentreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="680" y="780"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="current">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="enddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="170"/>
+	</column>
+	<column name="occupation">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="occupationstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="occupationstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="occupationtext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="occupationtrade">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="occupationtradetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="serialnum">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="startdt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="title">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="titletext">
+		<type name="character varying" length="512"/>
+	</column>
+</table>
+
+<table name="nbki_accountreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="680" y="220"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="accountrating">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="accountratingdate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="accountratingtext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="accttype">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="accttypetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="amtoutstanding">
+		<type name="character varying" length="9"/>
+	</column>
+	<column name="amtpastdue">
+		<type name="character varying" length="9"/>
+	</column>
+	<column name="closeddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="collateral2text">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="collateralcode">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="creditlimit">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="curbalanceamt">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="currencycode">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="interestpaymentduedate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="interestpaymentfrequencycode">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="interestpaymentfrequencytext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="lastpaymtdt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="monthsreviewed">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="numdays30">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="numdays60">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="numdays90">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="openeddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="ownerindic">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="ownerindictext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="paymentduedate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="paymtfreqtext">
+		<type name="character varying" length="64"/>
+	</column>
+	<column name="paymtpat">
+		<type name="character varying" length="128"/>
+	</column>
+	<column name="paymtpatstartdt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="reportingdt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="termsamt">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="termsfrequency">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="businesscategory">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="completeperformdt">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="partnerstartdate">
+		<type name="date" length="512"/>
+	</column>
+</table>
+
+<table name="nbki_legalitemsreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1000" y="300"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="considereddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="court">
+		<type name="character varying" length="170"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="filingnum">
+		<type name="character varying" length="35"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="plaintiff">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="reporteddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="resolution">
+		<type name="character varying" length="500"/>
+	</column>
+	<column name="satisfieddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_bankruptcyreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1000" y="20"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="bankruptcystatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="casenum">
+		<type name="character varying" length="35"/>
+	</column>
+	<column name="court">
+		<type name="character varying" length="170"/>
+	</column>
+	<column name="dischargedt">
+		<type name="date" length="512"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="plaintiff">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="reporteddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="resolution">
+		<type name="character varying" length="500"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="status">
+		<type name="integer" length="512"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_officialinforeply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1000" y="580"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="datereported">
+		<type name="date" length="8"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="information">
+		<type name="character varying" length="500"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="source">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+</table>
+
+<table name="nbki_inquiryreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="680" y="20"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="currencycode">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="inqamount">
+		<type name="character varying" length="9"/>
+	</column>
+	<column name="inqcontrolnum">
+		<type name="character varying" length="9"/>
+	</column>
+	<column name="inqpurpose">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="inqpurposetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="inquiryperiod">
+		<type name="character varying" length="64"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="suppressflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="userreference">
+		<type name="character varying" length="25"/>
+	</column>
+</table>
+
+<table name="nbki_account">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="960"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="serialnum">
+		<type name="integer" length="32"/>
+	</column>
+	<column name="acctnum">
+		<type name="character varying" length="35"/>
+	</column>
+</table>
+
+<sequence name="sq_nbki_report"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="nbki_report">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="20" y="20"/>
+	<column name="report_id" not-null="true" sequence="dwh.sq_nbki_report">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="application_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="addons">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="groups">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="inqcontrolnum">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="membercodestatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="suppressionstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="SubjectReply.fileSinceDt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="SubjectReply.lastUpdatedDt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.totalAccts">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.negativeRating">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalActiveBalanceAccounts">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalHighCredit.Code">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalHighCredit.Value">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalCurrentBalance.Code">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalCurrentBalance.Value">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalPastDueBalance.Code">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalPastDueBalance.Value">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.oldest">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.totalOutstandingBalance.Code">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalOutstandingBalance.Value">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalScheduledPaymnts.Code">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalScheduledPaymnts.Value">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.mostRecentAcc">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.mostRecentOfficialInfo">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.mostRecentBankruptcy">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.mostRecentLegalItem">
+		<type name="date" length="10"/>
+	</column>
+	<column name="calc.totalBankruptcies">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalLegalItems">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalOfficialInfo">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalInquiries">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.recentInquiries">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.collectionsInquiries">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.mostRecentInqText">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="calc.totalDisputedAccounts">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalDisputedBankruptcy">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalDisputedLegalItem">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.totalDisputedOfficialInfo">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="calc.reportIssueDateTime">
+		<type name="date" length="50"/>
+	</column>
+	<column name="ctErr.code">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="ctErr.text">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.uniqueId">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.errorCode">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.errorText">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.exclusionCode">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.scoreID">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.score">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.reasonCode1">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.reasonCode2">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.reasonCode3">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.reasonCode4">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.derigIndicator">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="ficoRisk.systemDateTime">
+		<type name="character varying" length="512"/>
+	</column>
+	<constraint name="pk_nbki_report" type="pk-constr" table="dwh.nbki_report">
+		<columns names="report_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="nbki_idreply">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="20" y="680"/>
+	<column name="report_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="disputeddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="disputedremarks">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="disputedstatus">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="disputedstatustext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="filesincedt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="freezeflag">
+		<type name="integer" length="1"/>
+	</column>
+	<column name="idnum">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="idtype">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="idtypetext">
+		<type name="character varying" length="512"/>
+	</column>
+	<column name="issueauthority">
+		<type name="character varying" length="160"/>
+	</column>
+	<column name="issuecountry">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="issuedate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="lastupdateddt">
+		<type name="date" length="10"/>
+	</column>
+	<column name="serialnum">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="seriesnumber">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="suppressflag">
+		<type name="character varying" length="1"/>
+	</column>
+</table>
+
+<constraint name="fk_nbki_idreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_idreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_personreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_personreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_addressreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_addressreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_phonereply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_phonereply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_employmentreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_employmentreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_accountreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_accountreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_legalitemsreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_legalitemsreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_bankruptcyreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_bankruptcyreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_officialinforeply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_officialinforeply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_inquiryreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_inquiryreply">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_account___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_account">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_nbki_personreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_personreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_idreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_idreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_addressreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_addressreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_accountreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_accountreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_inquiryreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_inquiryreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_employmentreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_employmentreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_bankruptcyreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_bankruptcyreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_legalitemsreply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_legalitemsreply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_officialinforeply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_officialinforeply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_phonereply_nbki_report" type="relfk"
+	 src-table="dwh.nbki_phonereply"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_nbki_account_nbki_report" type="relfk"
+	 src-table="dwh.nbki_account"
+	 dst-table="dwh.nbki_report"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>

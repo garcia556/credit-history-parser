@@ -1,0 +1,22 @@
+{
+	"API-00000": "Unknown error",
+
+	"API-10001": "User not found"			,
+	"API-10002": "Incorrect password"		,
+	"API-10003": "User already exists"		,
+	"API-10004": "Token error, please login",
+	"API-10005": "Invalid request type"		,
+	"API-10006": "Permission denied"		,
+
+	"API-20001": "No data returned while getting model aggregate"				,
+	"API-20002": "More than one record returned while getting model aggregate"	,
+	"API-20003": "Rule not found"												,
+	"API-20004": "Rule query returned more than one row"						,
+	"API-20005": "Order not found"												,
+	"API-20006": "Working order not found"										,
+	"API-20007": "Order has no models"											,
+	"API-20008": "Application not found"										,
+	"API-20009": "Application is processed already"								,
+	"API-20010": "Model deployment failed"
+}
+

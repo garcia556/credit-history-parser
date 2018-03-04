@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.1-alpha1" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<role name="ps_owner"
+      encrypted="true">
+</role>
+
+<database name="ps" encoding="UTF8" lc-collate="en_US.utf8" lc-ctype="en_US.utf8">
+	<role name="ps_owner"/>
+	<tablespace name="pg_default"/>
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<schema name="dwh" rect-visible="true" fill-color="#e1e1e1" sql-disabled="true">
+	<role name="postgres"/>
+</schema>
+
+<sequence name="sq_okb_root"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_summary">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="740"/>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution1">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution2">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution3">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution4">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution5">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisdistribution5plus">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsguarantor">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsguarantorrecip">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsjoint">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsjointrecip">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsownerrecip">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsreferee">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caisrecordsrefereerecip">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution1">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution2">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution3">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution4">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution5">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsdistribution5plus">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast12monthsguarantor">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast12monthsjoint">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast12monthsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast12monthsreferee">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast3monthsguarantor">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast3monthsjoint">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast3monthsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast3monthsreferee">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast6monthsguarantor">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast6monthsjoint">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast6monthsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capslast6monthsreferee">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsguarantor">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsguarantorbeforefilter">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsjoint">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsjointbeforefilter">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsownerfilter">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsreferee">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="capsrecordsrefereefilter">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="checkother1">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother2">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother3">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother4">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother5">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother6">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother7">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother8">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother9">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother10">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother11">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother12">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother13">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother14">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother15">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother16">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother17">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother18">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother19">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="checkother20">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="consumerenquirycountlast12month">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="potentialmonthlyinstalmentsallbutowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="potentialmonthlyinstalmentsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="potentialoutstandingbalanceallbutowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="potentialoutstandingbalanceowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="totalmonthlyinstalmentsallbutowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="totalmonthlyinstalmentsowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="totaloutstandingbalanceallbutowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="totaloutstandingbalanceowner">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="worstcurrentpaystatusguarantor">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worstcurrentpaystatusjoint">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worstcurrentpaystatusowner">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worstcurrentpaystatusreferee">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worsteverpaystatusguarantor">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worsteverpaystatusjoint">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worsteverpaystatusowner">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="worsteverpaystatusreferee">
+		<type name="character varying" length="1"/>
+	</column>
+</table>
+
+<table name="okb_warnings">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="280"/>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="value">
+		<type name="text" length="0"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_cais"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_cais_monthlyhistory">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="460"/>
+	<column name="cais_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="historydate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="accountpaymenthistory">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="accountbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="arrearsbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="instalment">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="creditlimit">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="paymentsource">
+		<type name="character varying" length="2"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_cais_consumer"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_cais_consumer_employer">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="20"/>
+	<column name="cais_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="idnumber">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="currentpreviousindicator">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="startdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="enddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="flatnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="housenbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="buildingnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="line1">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="line2">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line3">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line4">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="regioncode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="postcode">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="country">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="telephonenumber">
+		<type name="character varying" length="16"/>
+	</column>
+</table>
+
+<table name="okb_cais_consumer_address">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="260"/>
+	<column name="cais_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="type">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="addresscurrprev">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="flatnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="housenbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="buildingnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="line1">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="line2">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line3">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line4">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="regioncode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="postcode">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="country">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="startdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="enddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="hometelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+</table>
+
+<table name="okb_cais_consumer_legal">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="500"/>
+	<column name="cais_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="courtjudgementorder">
+		<type name="character varying" length="60"/>
+	</column>
+	<column name="courtname">
+		<type name="character varying" length="200"/>
+	</column>
+	<column name="dateofjudgement">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="judgementtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="resolution">
+		<type name="character varying" length="2000"/>
+	</column>
+	<column name="amountofrecovery">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="currency">
+		<type name="character varying" length="3"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_cais_consumer_warranty"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_cais_consumer_warranty_history">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1540" y="660"/>
+	<column name="cais_consumer_warranty_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="acctotaloutstandingbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyoutstandingbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyinstalmentamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="historydate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantypaymenthistorystatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="warrantyarrearsbalance">
+		<type name="integer" length="15"/>
+	</column>
+</table>
+
+<table name="okb_cais_lien">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="620"/>
+	<column name="cais_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="lienagreementnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="lieneename">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="collateralid">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="collateralidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="collateralname">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="collateraladdress">
+		<type name="character varying" length="200"/>
+	</column>
+	<column name="collateralestimatedvalue">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="collateralcurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="collateralestimatedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="lienagreementopendate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="lienagreementduedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="liencloseddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="collateralstartdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="collateralenddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="lienreasonforclosure">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="liencomments">
+		<type name="character varying" length="150"/>
+	</column>
+</table>
+
+<table name="okb_cais_assignee">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="880"/>
+	<column name="cais_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="assdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="asscomment">
+		<type name="character varying" length="2000"/>
+	</column>
+</table>
+
+<table name="okb_cais_guarantee">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="980"/>
+	<column name="cais_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="guaragreementnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="guarantorname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="guarcoveredamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="guarcoveredamountcurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="guaramount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="guaramountcurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="guaropendate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarduedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarclosedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarreasonforclosure">
+		<type name="character varying" length="2"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_guar"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<sequence name="sq_okb_guar_consumer"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_guar_consumer_address">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="1160"/>
+	<column name="guar_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="type">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="addresscurrprev">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="flatnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="housenbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="buildingnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="line1">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="line2">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line3">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line4">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="regioncode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="postcode">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="country">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="startdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="enddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="hometelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+</table>
+
+<table name="okb_nameidhistory">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="360"/>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="idchangesource">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="idchangedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="idtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="idnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="idissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="idplaceofissue">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="idauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="idexpirydate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="idstatus">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="pensionnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="surname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="name1">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name2">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="dateofbirth">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="placeofbirth">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="sex">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="judgementtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="newidnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="comments">
+		<type name="character varying" length="2000"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_caps"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_caps_decision">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="1580"/>
+	<column name="caps_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="streamid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="typeofdecision">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="dateofdecision">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="decisionenddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="decisionreason">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="decisionamount">
+		<type name="character varying" length="15"/>
+	</column>
+	<column name="currency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="comments">
+		<type name="character varying" length="256"/>
+	</column>
+</table>
+
+<sequence name="sq_okb_caps_consumer"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="okb_caps_consumer_employer">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="1760"/>
+	<column name="caps_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="idnumber">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="currentpreviousindicator">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="startdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="enddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="timewithemployer">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="flatnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="housenbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="buildingnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="line1">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="line2">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line3">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line4">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="regioncode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="postcode">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="country">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="worktelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+	<column name="workmobiletelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+</table>
+
+<table name="okb_caps_consumer_address">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="2040"/>
+	<column name="caps_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="addresstype">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="addressflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="flatnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="housenbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="buildingnbr">
+		<type name="character varying" length="6"/>
+	</column>
+	<column name="line1">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="line2">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line3">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="line4">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="regioncode">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="postcode">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="country">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="startdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="enddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="timeataddress">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="hometelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+</table>
+
+<table name="okb_caps_consumer_verification">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="2300"/>
+	<column name="caps_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="status">
+		<type name="character varying" length="20"/>
+	</column>
+</table>
+
+<table name="okb_root">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="20"/>
+	<column name="root_id" not-null="true" sequence="dwh.sq_okb_root">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="application_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="responsedate">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="errorcode">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="streamid">
+		<type name="integer" length="20"/>
+	</column>
+	<column name="pvs.status">
+		<type name="varchar" length="20"/>
+	</column>
+	<constraint name="okb_root_pk" type="pk-constr" table="dwh.okb_root">
+		<columns names="root_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_cais">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="440" y="20"/>
+	<column name="cais_id" not-null="true" sequence="dwh.sq_okb_cais">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="accountclass">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="consumeraccountnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="opendate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="numofapplicants">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="currency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="financetype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="purposeoffinance">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="amountoffinance">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="creditlimit">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="duration">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="durationunit">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="instalment">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="paymentfrequency">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="typeofsecurity">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="insuredloan">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="amountinsuredloan">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="interestrate">
+		<type name="decimal" length="4" precision="3"/>
+	</column>
+	<column name="creditfacilitystatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="accountpaymentstatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="outstandingbalance">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="arrearsbalance">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="fulfilmentduedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="lastpaymentdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="accountcloseddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="defaultdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="litigationdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="writeoffdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="reasonforclosure">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="accountspecialstatus">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="lastmissedpaymentdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="recordblockdisputeindicator">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateaccountadded">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="lastupdatets">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="monthoflastupdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="subscribercomments">
+		<type name="character varying" length="250"/>
+	</column>
+	<column name="accountholdercomments">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="worstpaymentstatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="totalamountoffinance">
+		<type name="character varying" length="15"/>
+	</column>
+	<column name="securedamount">
+		<type name="character varying" length="15"/>
+	</column>
+	<column name="securitystartdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="securityenddate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="interestpaymentdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="sourceofpayment">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="applicationnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="infopartflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="cbrfinancetype">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="legalaccountnumber">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="totalcostoffinanceinpercent">
+		<type name="decimal" length="4" precision="3"/>
+	</column>
+	<constraint name="okb_cais_pk" type="pk-constr" table="dwh.okb_cais">
+		<columns names="cais_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_cais_consumer">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="20"/>
+	<column name="cais_consumer_id" not-null="true" sequence="dwh.sq_okb_cais_consumer">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cais_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="accountholdertype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="title">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="name1">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name2">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name3">
+		<type name="text" length="0"/>
+	</column>
+	<column name="surname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="primaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="primaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="primaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidplaceofissue">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="primaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="secondaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="secondaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="secondaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidplaceofissue">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="secondaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="pensionnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbrissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="privateentrepreneuregrn">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="previouspassportnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="aliasname">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="previouscompanyname">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="sex">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateofbirth">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="placeofbirth">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="nationality">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="consentflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateconsentgiven">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="mobiletelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+	<constraint name="okb_cais_consumer_pk" type="pk-constr" table="dwh.okb_cais_consumer">
+		<columns names="cais_consumer_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_cais_consumer_warranty">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="1160" y="660"/>
+	<column name="cais_consumer_warranty_id" not-null="true" sequence="dwh.sq_okb_cais_consumer_warranty">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cais_consumer_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="warrantyagreementnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="accfinancetype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="acccbrfinancetype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="acccurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="accamountoffinance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="acctotalamountoffinance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="acctotaloutstandingbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantymonthoflastupdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantylastupdatets">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="warrantyamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyopendate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantyduedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantyclaimdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantycreditlimit">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="datewarrantyadded">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantyoutstandingbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyinstalmentamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyinstalmentdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantypaymentstatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="warrantyarrearsbalance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="warrantyclosedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="warrantyreasonforclosure">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="legalwarrantyagreementnumber">
+		<type name="character varying" length="80"/>
+	</column>
+	<column name="subscribercomments">
+		<type name="character varying" length="250"/>
+	</column>
+	<constraint name="okb_cais_consumer_warranty_pk" type="pk-constr" table="dwh.okb_cais_consumer_warranty">
+		<columns names="cais_consumer_warranty_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_guar">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="440" y="1160"/>
+	<column name="guar_id" not-null="true" sequence="dwh.sq_okb_guar">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="guaragreementnumber">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="guarantorname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="guarcoveredamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="guarcoveredamountcurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="guaramount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="guaramountcurrency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="guaropendate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarduedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarclosedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="guarreasonforclosure">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="guarnumofholders">
+		<type name="integer" length="2"/>
+	</column>
+	<column name="guardateadded">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="guarlastupdatets">
+		<type name="timestamp" length="14"/>
+	</column>
+	<column name="monthoflastupdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<constraint name="okb_guar_pk" type="pk-constr" table="dwh.okb_guar">
+		<columns names="guar_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_guar_consumer">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="1160"/>
+	<column name="guar_consumer_id" not-null="true" sequence="dwh.sq_okb_guar_consumer">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="guar_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="accountholdertype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="title">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="name1">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name2">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="surname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="primaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="primaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="primaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidplaceofissue">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="primaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="secondaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="secondaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="secondaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidplaceofissue">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="secondaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="pensionnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbrissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="privateentrepreneuregrn">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="previouspassportnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="aliasname">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="previouscompanyname">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="sex">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateofbirth">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="placeofbirth">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="nationality">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="consentflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateconsentgiven">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="mobiletelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+	<constraint name="okb_guar_consumer_pk" type="pk-constr" table="dwh.okb_guar_consumer">
+		<columns names="guar_consumer_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_caps">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="440" y="1580"/>
+	<column name="caps_id" not-null="true" sequence="dwh.sq_okb_caps">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="accountclass">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="streamid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="reason">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="enquirydate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="nbrofapplicants">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="purposeoffinance">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="applicationnumber">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="applicationdate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="financetype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="currency">
+		<type name="character varying" length="3"/>
+	</column>
+	<column name="creditlimit">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="amountoffinance">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="initialdepositamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="finalpaymentamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="duration">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="durationunits">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="instalmentamount">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="paymentfrequency">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="typeofsecurity">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="disputeindicator">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="comments">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="applicationchannel">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="cbrfinancetype">
+		<type name="character varying" length="2"/>
+	</column>
+	<constraint name="okb_caps_pk" type="pk-constr" table="dwh.okb_caps">
+		<columns names="caps_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_caps_consumer">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="800" y="1760"/>
+	<column name="caps_consumer_id" not-null="true" sequence="dwh.sq_okb_caps_consumer">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="caps_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="applicanttype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="title">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="name1">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name2">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="name3">
+		<type name="text" length="0"/>
+	</column>
+	<column name="surname">
+		<type name="character varying" length="150"/>
+	</column>
+	<column name="dateofbirth">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="placeofbirth">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="aliasname">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="previouscompanyname">
+		<type name="character varying" length="40"/>
+	</column>
+	<column name="sex">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="nationality">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="consentflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dateconsentgiven">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="primaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="primaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="primaryidissueplace">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="primaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="secondaryidtype">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="secondaryid">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="secondaryidexpiry">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="secondaryidissueplace">
+		<type name="character varying" length="30"/>
+	</column>
+	<column name="secondaryidauthority">
+		<type name="character varying" length="100"/>
+	</column>
+	<column name="drivinglicensenbr">
+		<type name="character varying" length="10"/>
+	</column>
+	<column name="medicalnbr">
+		<type name="character varying" length="25"/>
+	</column>
+	<column name="pensionnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="privateentrepreneurnbrissuedate">
+		<type name="timestamp" length="8"/>
+	</column>
+	<column name="privateentrepreneuregrn">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="previouspassportnbr">
+		<type name="character varying" length="20"/>
+	</column>
+	<column name="primaryincome">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="primaryincomefreq">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="primaryincomeflag">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="otherincome">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="residentialstatus">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="occupation">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="occupationstatus">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="maritalstatus">
+		<type name="character varying" length="2"/>
+	</column>
+	<column name="numberofdependants">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="education">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="mobiletelnbr">
+		<type name="character varying" length="16"/>
+	</column>
+	<column name="mobileregistration">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="visaccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="mastercardccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="dinersccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="amexpressccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="jcbccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="debitccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="chqgteeccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="retailccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<column name="otherccheld">
+		<type name="character varying" length="1"/>
+	</column>
+	<constraint name="okb_caps_consumer_pk" type="pk-constr" table="dwh.okb_caps_consumer">
+		<columns names="caps_consumer_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="okb_validationerrors">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="40" y="140"/>
+	<column name="root_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="number">
+		<type name="integer" length="9"/>
+	</column>
+	<column name="field">
+		<type name="character varying" length="24"/>
+	</column>
+	<column name="path">
+		<type name="text" length="0"/>
+	</column>
+	<column name="value">
+		<type name="text" length="0"/>
+	</column>
+	<column name="extra1">
+		<type name="text" length="0"/>
+	</column>
+	<column name="extra2">
+		<type name="text" length="0"/>
+	</column>
+</table>
+
+<constraint name="fk_okb_validationerrors___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_validationerrors">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_summary___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_summary">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_warnings___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_warnings">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_monthlyhistory___okb_cais" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais" table="dwh.okb_cais_monthlyhistory">
+	<columns names="cais_id" ref-type="src-columns"/>
+	<columns names="cais_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer_employer___okb_cais_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais_consumer" table="dwh.okb_cais_consumer_employer">
+	<columns names="cais_consumer_id" ref-type="src-columns"/>
+	<columns names="cais_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer_address___okb_cais_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais_consumer" table="dwh.okb_cais_consumer_address">
+	<columns names="cais_consumer_id" ref-type="src-columns"/>
+	<columns names="cais_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer_legal___okb_cais_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais_consumer" table="dwh.okb_cais_consumer_legal">
+	<columns names="cais_consumer_id" ref-type="src-columns"/>
+	<columns names="cais_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer_warranty_history___okb_cais_consumer_warr" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais_consumer_warranty" table="dwh.okb_cais_consumer_warranty_history">
+	<columns names="cais_consumer_warranty_id" ref-type="src-columns"/>
+	<columns names="cais_consumer_warranty_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_lien___okb_cais" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais" table="dwh.okb_cais_lien">
+	<columns names="cais_id" ref-type="src-columns"/>
+	<columns names="cais_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_assignee___okb_cais" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais" table="dwh.okb_cais_assignee">
+	<columns names="cais_id" ref-type="src-columns"/>
+	<columns names="cais_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_guarantee___okb_cais" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais" table="dwh.okb_cais_guarantee">
+	<columns names="cais_id" ref-type="src-columns"/>
+	<columns names="cais_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_guar_consumer_address___okb_guar_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_guar_consumer" table="dwh.okb_guar_consumer_address">
+	<columns names="guar_consumer_id" ref-type="src-columns"/>
+	<columns names="guar_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_nameidhistory___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_nameidhistory">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps_decision___okb_caps" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_caps" table="dwh.okb_caps_decision">
+	<columns names="caps_id" ref-type="src-columns"/>
+	<columns names="caps_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps_consumer_employer___okb_caps_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_caps_consumer" table="dwh.okb_caps_consumer_employer">
+	<columns names="caps_consumer_id" ref-type="src-columns"/>
+	<columns names="caps_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps_consumer_address___okb_caps_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_caps_consumer" table="dwh.okb_caps_consumer_address">
+	<columns names="caps_consumer_id" ref-type="src-columns"/>
+	<columns names="caps_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps_consumer_verification___okb_caps_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_caps_consumer" table="dwh.okb_caps_consumer_verification">
+	<columns names="caps_consumer_id" ref-type="src-columns"/>
+	<columns names="caps_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_cais">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer___okb_cais" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais" table="dwh.okb_cais_consumer">
+	<columns names="cais_id" ref-type="src-columns"/>
+	<columns names="cais_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_cais_consumer_warranty___okb_cais_consumer" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_cais_consumer" table="dwh.okb_cais_consumer_warranty">
+	<columns names="cais_consumer_id" ref-type="src-columns"/>
+	<columns names="cais_consumer_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_guar___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_guar">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_guar_consumer___okb_guar" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_guar" table="dwh.okb_guar_consumer">
+	<columns names="guar_id" ref-type="src-columns"/>
+	<columns names="guar_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps___okb_root" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_root" table="dwh.okb_caps">
+	<columns names="root_id" ref-type="src-columns"/>
+	<columns names="root_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_okb_caps_consumer___okb_caps" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.okb_caps" table="dwh.okb_caps_consumer">
+	<columns names="caps_id" ref-type="src-columns"/>
+	<columns names="caps_id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_okb_validationerrors_okb_root" type="relfk"
+	 src-table="dwh.okb_validationerrors"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_summary_okb_root" type="relfk"
+	 src-table="dwh.okb_summary"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_warnings_okb_root" type="relfk"
+	 src-table="dwh.okb_warnings"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_okb_root" type="relfk"
+	 src-table="dwh.okb_cais"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_monthlyhistory_okb_cais" type="relfk"
+	 src-table="dwh.okb_cais_monthlyhistory"
+	 dst-table="dwh.okb_cais"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_okb_cais" type="relfk"
+	 src-table="dwh.okb_cais_consumer"
+	 dst-table="dwh.okb_cais"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_employer_okb_cais_consumer" type="relfk"
+	 src-table="dwh.okb_cais_consumer_employer"
+	 dst-table="dwh.okb_cais_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_address_okb_cais_consumer" type="relfk"
+	 src-table="dwh.okb_cais_consumer_address"
+	 dst-table="dwh.okb_cais_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_legal_okb_cais_consumer" type="relfk"
+	 src-table="dwh.okb_cais_consumer_legal"
+	 dst-table="dwh.okb_cais_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_warranty_okb_cais_consumer" type="relfk"
+	 src-table="dwh.okb_cais_consumer_warranty"
+	 dst-table="dwh.okb_cais_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_consumer_warranty_history_okb_cais_consumer_warran" type="relfk"
+	 src-table="dwh.okb_cais_consumer_warranty_history"
+	 dst-table="dwh.okb_cais_consumer_warranty"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_lien_okb_cais" type="relfk"
+	 src-table="dwh.okb_cais_lien"
+	 dst-table="dwh.okb_cais"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_assignee_okb_cais" type="relfk"
+	 src-table="dwh.okb_cais_assignee"
+	 dst-table="dwh.okb_cais"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_cais_guarantee_okb_cais" type="relfk"
+	 src-table="dwh.okb_cais_guarantee"
+	 dst-table="dwh.okb_cais"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_guar_okb_root" type="relfk"
+	 src-table="dwh.okb_guar"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_guar_consumer_okb_guar" type="relfk"
+	 src-table="dwh.okb_guar_consumer"
+	 dst-table="dwh.okb_guar"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_guar_consumer_address_okb_guar_consumer" type="relfk"
+	 src-table="dwh.okb_guar_consumer_address"
+	 dst-table="dwh.okb_guar_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_nameidhistory_okb_root" type="relfk"
+	 src-table="dwh.okb_nameidhistory"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_okb_root" type="relfk"
+	 src-table="dwh.okb_caps"
+	 dst-table="dwh.okb_root"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_decision_okb_caps" type="relfk"
+	 src-table="dwh.okb_caps_decision"
+	 dst-table="dwh.okb_caps"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_consumer_okb_caps" type="relfk"
+	 src-table="dwh.okb_caps_consumer"
+	 dst-table="dwh.okb_caps"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_consumer_employer_okb_caps_consumer" type="relfk"
+	 src-table="dwh.okb_caps_consumer_employer"
+	 dst-table="dwh.okb_caps_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_consumer_address_okb_caps_consumer" type="relfk"
+	 src-table="dwh.okb_caps_consumer_address"
+	 dst-table="dwh.okb_caps_consumer"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_okb_caps_consumer_verification_okb_caps_consumer" type="relfk"
+	 src-table="dwh.okb_caps_consumer_verification"
+	 dst-table="dwh.okb_caps_consumer"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>

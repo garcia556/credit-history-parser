@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.1-alpha1" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="ps_owner">
+<role name="ps_owner">
+</role>
+
+<database name="ps">
+	<role name="ps_owner"/>
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<schema name="dwh" rect-visible="true" fill-color="#e1e1e1" sql-disabled="true">
+	<role name="ps_owner"/>
+</schema>
+
+<sequence name="sq_eqf_response"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="eqf_doc">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="20"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="doctype">
+		<type name="varchar" length="2"/>
+	</column>
+	<column name="docno">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="docdate">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="docenddate">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="docplace">
+		<type name="varchar" length="255"/>
+	</column>
+</table>
+
+<table name="eqf_history_title">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="360" y="440"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="lastname">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="firstname">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="middlename">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="doc.doctype">
+		<type name="varchar" length="2"/>
+	</column>
+	<column name="doc.docno">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="doc.docdate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="doc.docenddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="doc.docplace">
+		<type name="varchar" length="255"/>
+	</column>
+</table>
+
+<table name="eqf_history_addr_reg">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="160"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="value">
+		<type name="varchar" length="500"/>
+	</column>
+</table>
+
+<table name="eqf_credit">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="360" y="20"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cred_id">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="cred_first_load">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_owner">
+		<type name="varchar" length="1"/>
+	</column>
+	<column name="cred_partner_type">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="cred_person_num">
+		<type name="integer" length="3"/>
+	</column>
+	<column name="cred_person_status">
+		<type name="varchar" length="1"/>
+	</column>
+	<column name="cred_sum">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_currency">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="cred_date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_enddate">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_sum_payout">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_date_payout">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_sum_debt">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_sum_limit">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_facility">
+		<type name="varchar" length="1"/>
+	</column>
+	<column name="delay5">
+		<type name="integer" length="10"/>
+	</column>
+	<column name="delay30">
+		<type name="integer" length="10"/>
+	</column>
+	<column name="delay60">
+		<type name="integer" length="10"/>
+	</column>
+	<column name="delay90">
+		<type name="integer" length="10"/>
+	</column>
+	<column name="delay_more">
+		<type name="integer" length="10"/>
+	</column>
+	<column name="cred_sum_overdue">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_day_overdue">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="cred_max_overdue">
+		<type name="decimal" length="15" precision="2"/>
+	</column>
+	<column name="cred_prolong">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="cred_enddate_fact">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="cred_collateral">
+		<type name="varchar" length="1"/>
+	</column>
+	<column name="cred_update">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_type">
+		<type name="varchar" length="2"/>
+	</column>
+	<column name="cred_active">
+		<type name="varchar" length="1"/>
+	</column>
+	<column name="cred_active_date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="cred_sum_type">
+		<type name="varchar" length="1"/>
+	</column>
+</table>
+
+<table name="eqf_addr_request">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="260"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="type">
+		<type name="varchar" length="4"/>
+	</column>
+	<column name="date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="value">
+		<type name="varchar" length="500"/>
+	</column>
+</table>
+
+<table name="eqf_phone">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="980" y="260"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="type">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="value">
+		<type name="varchar" length="20"/>
+	</column>
+</table>
+
+<table name="eqf_court">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="380"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cred_id">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="info">
+		<type name="varchar" length="1500"/>
+	</column>
+</table>
+
+<table name="eqf_official">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="980" y="380"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cred_id">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="info">
+		<type name="varchar" length="1500"/>
+	</column>
+</table>
+
+<table name="eqf_bankruptcy">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="480"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cred_id">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="info">
+		<type name="varchar" length="1500"/>
+	</column>
+</table>
+
+<table name="eqf_info_request">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="600"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="request_reason">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="timeslot">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="cred_type">
+		<type name="varchar" length="2"/>
+	</column>
+	<column name="cred_currency">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="cred_sum">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="cred_duration">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="cred_partner_type">
+		<type name="varchar" length="10"/>
+	</column>
+</table>
+
+<table name="eqf_scoring">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="660" y="780"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="scor_id">
+		<type name="varchar" length="20"/>
+	</column>
+	<column name="scor_card_id">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="scor_name">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="score">
+		<type name="integer" length="20"/>
+	</column>
+	<column name="scor_error">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="scor_error_text">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="scor_reason">
+		<type name="varchar" length="3"/>
+	</column>
+</table>
+
+<table name="eqf_check">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="920" y="620"/>
+	<column name="response_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="element">
+		<type name="varchar" length="50"/>
+	</column>
+</table>
+
+<table name="eqf_history_addr_fact">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="980" y="160"/>
+	<column name="response_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="value">
+		<type name="varchar" length="500"/>
+	</column>
+</table>
+
+<table name="eqf_response">
+	<schema name="dwh"/>
+	<role name="ps_owner"/>
+	<position x="20" y="20"/>
+	<column name="response_id" not-null="true" sequence="dwh.sq_eqf_response">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="application_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="version">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="partnerid">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="datetime">
+		<type name="timestamp" length="19"/>
+	</column>
+	<column name="num">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="dateofreport">
+		<type name="date" length="10"/>
+	</column>
+	<column name="report_type">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="responsecode">
+		<type name="varchar" length="3"/>
+	</column>
+	<column name="responsestring">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="title_part.private.lastname">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="title_part.private.firstname">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="title_part.private.middlename">
+		<type name="varchar" length="50"/>
+	</column>
+	<column name="title_part.private.birthday">
+		<type name="date" length="10"/>
+	</column>
+	<column name="title_part.private.birthplace">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="title_part.private.inn">
+		<type name="varchar" length="12"/>
+	</column>
+	<column name="title_part.private.pfno">
+		<type name="varchar" length="11"/>
+	</column>
+	<column name="title_part.private.driverno">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="title_part.private.medical">
+		<type name="varchar" length="10"/>
+	</column>
+	<column name="base_part.addr_reg">
+		<type name="varchar" length="500"/>
+	</column>
+	<column name="base_part.addr_fact">
+		<type name="varchar" length="500"/>
+	</column>
+	<column name="base_part.pboul.pboul_no">
+		<type name="varchar" length="15"/>
+	</column>
+	<column name="base_part.pboul.pboul_date">
+		<type name="date" length="10"/>
+	</column>
+	<column name="base_part.pboul.pboul_place">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="add_part.interest.hour">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.interest.day">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.interest.week">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.interest.month">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.interest.quarter">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.interest.year">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.hour">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.day">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.week">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.month">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.quarter">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="add_part.own_interest.year">
+		<type name="integer" length="15"/>
+	</column>
+	<column name="attrs">
+		<type name="jsonb" length="0"/>
+	</column>
+	<constraint name="pk_eqf_response" type="pk-constr" table="dwh.eqf_response">
+		<columns names="response_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="fk_eqf_doc___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_doc">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_history_title___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_history_title">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_history_addr___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_history_addr_reg">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_credit___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_credit">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_addr_request___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_addr_request">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_phone___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_phone">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_court___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_court">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_official___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_official">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_bankruptcy___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_bankruptcy">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_info_request" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_info_request">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_scoring___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_scoring">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_check___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_check">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_eqf_history_addr___eqf_response" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.eqf_response" table="dwh.eqf_history_addr_fact">
+	<columns names="response_id" ref-type="src-columns"/>
+	<columns names="response_id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_history_title_response" type="relfk"
+	 src-table="dwh.eqf_history_title"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_doc_response" type="relfk"
+	 src-table="dwh.eqf_doc"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_history_addr_eqf_response" type="relfk"
+	 src-table="dwh.eqf_history_addr_reg"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_eqf_credit_eqf_response" type="relfk"
+	 src-table="dwh.eqf_credit"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="name-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_addr_request_eqf_response" type="relfk"
+	 src-table="dwh.eqf_addr_request"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0.0425" y="2.725"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_phone_eqf_response" type="relfk"
+	 src-table="dwh.eqf_phone"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_court_eqf_response" type="relfk"
+	 src-table="dwh.eqf_court"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_official_eqf_response" type="relfk"
+	 src-table="dwh.eqf_official"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_bankruptcy_eqf_response" type="relfk"
+	 src-table="dwh.eqf_bankruptcy"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_info_request_eqf_response" type="relfk"
+	 src-table="dwh.eqf_info_request"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_scoring_eqf_response" type="relfk"
+	 src-table="dwh.eqf_scoring"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_check_eqf_response" type="relfk"
+	 src-table="dwh.eqf_check"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_eqf_history_addr_fact_eqf_response" type="relfk"
+	 src-table="dwh.eqf_history_addr_fact"
+	 dst-table="dwh.eqf_response"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+</dbmodel>

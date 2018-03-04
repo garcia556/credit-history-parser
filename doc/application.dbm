@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.1-alpha1" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="ps_owner">
+<role name="ps_owner">
+</role>
+
+<database name="ps">
+	<role name="ps_owner"/>
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<sequence name="sq_application"
+	 start="1" increment="1"
+	 min-value="0" max-value="2147483647"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="ps_owner"/>
+</sequence>
+
+<table name="application">
+	<schema name="public"/>
+	<role name="ps_owner"/>
+	<position x="20" y="20"/>
+	<column name="application_id" not-null="true" sequence="public.sq_application">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="id" not-null="true">
+		<type name="varchar" length="128"/>
+	</column>
+	<column name="date_created" not-null="true" default-value="timezone('utc'::text, now())">
+		<type name="timestamp" length="0"/>
+	</column>
+	<column name="date_modified" not-null="true" default-value="timestamp 'infinity'">
+		<type name="timestamp" length="0"/>
+	</column>
+	<constraint name="pk_application" type="pk-constr" table="public.application">
+		<columns names="application_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+</dbmodel>

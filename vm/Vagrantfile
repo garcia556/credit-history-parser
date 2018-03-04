@@ -1,0 +1,25 @@
+$script = <<SCRIPT
+sed -i "s/PasswordAuthentication yes/#PasswordAuthentication yes/" /etc/ssh/sshd_config
+sed -i "s/PermitRootLogin prohibit-password/PermitRootLogin yes/"  /etc/ssh/sshd_config
+echo root:root | chpasswd
+service sshd restart
+SCRIPT
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "ubuntu/xenial64"
+  config.disksize.size = "50GB"
+
+  config.vm.hostname = "chparser"
+  config.vm.network "private_network", ip: "192.168.56.101"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 1024
+    vb.cpus = 2
+    vb.name = "vagrant_chparser_dev"
+  end
+
+  config.vm.provision "shell", inline: $script
+
+end
+

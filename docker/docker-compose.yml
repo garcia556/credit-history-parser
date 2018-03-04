@@ -1,0 +1,129 @@
+version: "3"
+
+networks:
+
+  nw_db:
+    driver: bridge
+  nw_api_xml_parse:
+    driver: bridge
+  nw_api_xml_transform:
+    driver: bridge
+  nw_api_persist:
+    driver: bridge
+
+
+
+services:
+
+####################################################################################
+
+  db:
+    image: postgres:${PG_VERSION}-alpine
+    volumes:
+      - ./volumes/db/data:/var/lib/postgresql/data
+      - ./volumes/db/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
+      - ../dbgen/diff:/sql:ro
+    environment:
+      POSTGRES_USER:     postgres
+      POSTGRES_PASSWORD: ${DB_PG_PASSWORD}
+      PGDATA:            /var/lib/postgresql/data/pgdata
+
+      DB_USER:     ${DB_USER}
+      DB_USER_RO:  ${DB_USER_RO}
+
+      DB_PASSWORD:     ${DB_PASSWORD}
+      DB_PASSWORD_RO:  ${DB_PASSWORD_RO}
+    ports:
+      - "127.0.0.1:5432:5432"
+    networks:
+      nw_db:
+        aliases:
+          - db
+    restart: unless-stopped
+
+####################################################################################
+
+  api_xml_entry:
+    image: node:${NODE_VERSION}-alpine
+    working_dir: /app
+    volumes:
+      - ../api:/app:ro
+      - ./volumes/node_modules:/node_modules:ro
+      - ./volumes/api_xml_entry:/logs
+      - ./volumes/xml:/xml
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    networks:
+      - nw_api_xml_parse
+      - nw_api_persist
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    command: node service/xml_entry
+    restart: unless-stopped
+
+####################################################################################
+
+  api_xml_parse:
+    image: node:${NODE_VERSION}-alpine
+    working_dir: /app
+    volumes:
+      - ../api:/app:ro
+      - ./volumes/node_modules:/node_modules:ro
+      - ./volumes/api_xml_parse:/logs
+      - ./volumes/xml:/xml
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    networks:
+      nw_api_xml_parse:
+        aliases:
+          - api_xml_parse
+      nw_api_xml_transform:
+    expose:
+      - "8080"
+    command: node service/xml_parse
+    restart: unless-stopped
+
+####################################################################################
+
+  api_xml_transform:
+    image: python:3
+    working_dir: /app
+    volumes:
+      - ../transform:/app:ro
+      - ./volumes/api_xml_transform:/logs
+    networks:
+      nw_api_xml_transform:
+        aliases:
+          - api_xml_transform
+    expose:
+      - "8080"
+    command: bash -c "pip install lxml && exec python run.py"
+    restart: unless-stopped
+
+####################################################################################
+
+  api_persist:
+    image: node:${NODE_VERSION}-alpine
+    depends_on:
+      - db
+    working_dir: /app
+    volumes:
+      - ../api:/app:ro
+      - ./volumes/node_modules:/node_modules:ro
+      - ./volumes/api_persist:/logs
+    environment:
+      NODE_ENV:    ${NODE_ENV}
+      DB_USER:     ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    networks:
+      nw_api_persist:
+        aliases:
+          - api_persist
+      nw_db:
+    expose:
+      - "8080"
+    command: node service/persist
+    restart: unless-stopped
+
