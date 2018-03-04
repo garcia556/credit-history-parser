@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message type="application" app_id="__ID__">
+	<main>
+	</main>
+	<credit_history>
+		<equifax>
+<![CDATA[
+
+]]>
+		</equifax>
+		<nbki>
+<![CDATA[
+
+]]>
+		</nbki>
+		<okb>
+<![CDATA[
+
+]]>
+		</okb>
+	</credit_history>
+</message>
