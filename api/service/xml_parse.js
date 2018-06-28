@@ -36,6 +36,10 @@ async function handleRequest(ctx, next)
 		ch = {};
 	let types = Object.keys(ch);
 
+// TODO: DEV
+types = types.filter(el => { return el !=  "okb"; });
+types = types.filter(el => { return el != "nbki"; });
+
 	res.credit_history = {};
 	for (let type of types)
 	{

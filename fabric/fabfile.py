@@ -192,7 +192,7 @@ def deploy_clean():
     if not confirmn(USER_CONFIRMATION):
         abort(ABORT_MESSAGE)
 
-    env.sudo_password = PASSWORD
+    env.password = PASSWORD
 
     env.warn_only = True
     undeploy_worker()
@@ -214,7 +214,7 @@ def logs(service = ""):
 ###################
 
 def purge_db_worker():
-    env.sudo_password = PASSWORD
+    env.password = PASSWORD
     sudo("rm -rf /home/{USERNAME}/docker/volumes/db/data/pgdata".format(USERNAME=USERNAME))
 
 @task
@@ -264,19 +264,22 @@ def bootstrap():
 
     # Secure the system a bit more, search for default ssh config patterns
     run("sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config")
+    run("sed -i 's/#PasswordAuthentication no/PasswordAuthentication no/' /etc/ssh/sshd_config")
     run("sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config")
 
     run("service sshd restart")
 
     # Install other software
-    run("apt -y install tmux htop bash-completion subversion pigz psmisc ncdu bmon bonnie++ dos2unix hdparm iftop iptraf iotop iputils-tracepath man zip unzip lshw lsof mdadm manpages ntpdate p7zip realpath slurm smartmontools traceroute linux-tools-generic sysstat")
+#    run("apt -y install tmux htop bash-completion subversion pigz psmisc ncdu bmon bonnie++ dos2unix hdparm iftop iptraf iotop iputils-tracepath man zip unzip lshw lsof mdadm manpages ntpdate p7zip realpath slurm smartmontools traceroute linux-tools-generic sysstat")
+    run("apt -y install tmux htop bash-completion subversion pigz psmisc ncdu bmon bonnie++ dos2unix hdparm iftop iptraf iotop iputils-tracepath man zip unzip lshw lsof mdadm manpages ntpdate p7zip slurm smartmontools traceroute linux-tools-generic sysstat")
 
     # Install Docker
     run("apt -y install apt-transport-https ca-certificates curl software-properties-common")
     run("curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -")
     run('add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"')
     run("apt update")
-    run("apt -y install docker-ce")
+#    run("apt -y install docker-ce")
+    run("apt -y install docker.io")
     run("usermod -aG docker {user}".format(user=USERNAME))
 
     # Install docker-compose

@@ -3,7 +3,7 @@
 CAUTION: Do not modify this file unless you know what you are doing.
          Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="0.9.1-alpha1" last-position="0,0" last-zoom="1"
+<dbmodel pgmodeler-ver="0.9.0" last-position="0,270" last-zoom="1"
 	 default-schema="public" default-owner="ps_owner">
 <role name="ps_owner">
 </role>
@@ -23,7 +23,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_personreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="380" y="20"/>
+	<position x="540" y="60"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -31,7 +31,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="countrybirth">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="deathflag">
 		<type name="integer" length="1"/>
@@ -40,19 +40,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="first">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="freezeflag">
 		<type name="integer" length="1"/>
@@ -61,7 +61,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="gendertext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lastupdateddt">
 		<type name="date" length="10"/>
@@ -70,31 +70,31 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="maritalstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name1">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="nationality">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="nationalitytext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="numdependants">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="oldfirstname">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="oldsurname">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="paternal">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="placeofbirth">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
 		<type name="integer" length="32"/>
@@ -107,7 +107,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_addressreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="380" y="380"/>
+	<position x="520" y="580"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -115,43 +115,43 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="addresstypetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="addrsincedt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="apartment">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="block">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="building">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="city">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="countrycode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="countrycodetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputeddate">
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="district">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -160,50 +160,50 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="housenumber">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lastupdateddt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="postal">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="prov">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="provtext">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="resstat">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="resstattext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
-		<type name="character varying" length="32"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="street">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="streettype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="streettypetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="subdistrict">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="suppressflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
 <table name="nbki_phonereply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="380" y="780"/>
+	<position x="540" y="1180"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -211,13 +211,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -229,13 +229,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="number">
-		<type name="character varying" length="14"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="phonetype">
 		<type name="integer" length="1"/>
 	</column>
 	<column name="phonetypetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
 		<type name="integer" length="32"/>
@@ -248,7 +248,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_employmentreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="680" y="780"/>
+	<position x="1040" y="1080"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -259,13 +259,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="enddt">
 		<type name="date" length="10"/>
@@ -280,28 +280,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="name">
-		<type name="character varying" length="170"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupation">
 		<type name="integer" length="1"/>
 	</column>
 	<column name="occupationstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupationstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupationtext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupationtrade">
 		<type name="integer" length="1"/>
 	</column>
 	<column name="occupationtradetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
-		<type name="character varying" length="32"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdt">
 		<type name="date" length="10"/>
@@ -313,14 +313,14 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="titletext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
 <table name="nbki_accountreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="680" y="220"/>
+	<position x="1040" y="340"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -331,25 +331,25 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="accountratingtext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accttype">
 		<type name="integer" length="2"/>
 	</column>
 	<column name="accttypetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amtoutstanding">
-		<type name="character varying" length="9"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amtpastdue">
-		<type name="character varying" length="9"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="closeddt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="collateral2text">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralcode">
 		<type name="integer" length="2"/>
@@ -361,19 +361,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="9"/>
 	</column>
 	<column name="currencycode">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputeddate">
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -388,7 +388,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="interestpaymentfrequencytext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lastpaymtdt">
 		<type name="date" length="10"/>
@@ -415,16 +415,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="ownerindictext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="paymentduedate">
 		<type name="date" length="10"/>
 	</column>
 	<column name="paymtfreqtext">
-		<type name="character varying" length="64"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="paymtpat">
-		<type name="character varying" length="128"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="paymtpatstartdt">
 		<type name="date" length="10"/>
@@ -445,10 +445,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="businesscategory">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="completeperformdt">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="partnerstartdate">
 		<type name="date" length="512"/>
@@ -458,7 +458,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_legalitemsreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="1000" y="300"/>
+	<position x="1540" y="420"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -466,25 +466,25 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="court">
-		<type name="character varying" length="170"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputeddate">
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="filingnum">
-		<type name="character varying" length="35"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="freezeflag">
 		<type name="integer" length="1"/>
@@ -493,13 +493,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="plaintiff">
-		<type name="character varying" length="32"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="reporteddt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="resolution">
-		<type name="character varying" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="satisfieddt">
 		<type name="date" length="10"/>
@@ -515,18 +515,18 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_bankruptcyreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="1000" y="20"/>
+	<position x="1540" y="60"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
 	<column name="bankruptcystatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="casenum">
-		<type name="character varying" length="35"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="court">
-		<type name="character varying" length="170"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dischargedt">
 		<type name="date" length="512"/>
@@ -535,13 +535,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -553,13 +553,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="plaintiff">
-		<type name="character varying" length="32"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="reporteddt">
 		<type name="date" length="10"/>
 	</column>
 	<column name="resolution">
-		<type name="character varying" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
 		<type name="integer" length="32"/>
@@ -575,7 +575,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_officialinforeply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="1000" y="580"/>
+	<position x="1540" y="800"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -586,13 +586,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -601,7 +601,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="information">
-		<type name="character varying" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lastupdateddt">
 		<type name="date" length="10"/>
@@ -610,7 +610,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="32"/>
 	</column>
 	<column name="source">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="suppressflag">
 		<type name="integer" length="1"/>
@@ -620,30 +620,30 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_inquiryreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="680" y="20"/>
+	<position x="1040" y="60"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
 	<column name="currencycode">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="freezeflag">
 		<type name="integer" length="1"/>
 	</column>
 	<column name="inqamount">
-		<type name="character varying" length="9"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="inqcontrolnum">
-		<type name="character varying" length="9"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="inqpurpose">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="inqpurposetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="inquiryperiod">
-		<type name="character varying" length="64"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="serialnum">
 		<type name="integer" length="32"/>
@@ -652,14 +652,14 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="userreference">
-		<type name="character varying" length="25"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
 <table name="nbki_account">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="40" y="960"/>
+	<position x="60" y="1263"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -667,7 +667,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="32"/>
 	</column>
 	<column name="acctnum">
-		<type name="character varying" length="35"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -682,7 +682,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_report">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="20" y="20"/>
+	<position x="40" y="43"/>
 	<column name="report_id" not-null="true" sequence="dwh.sq_nbki_report">
 		<type name="integer" length="0"/>
 	</column>
@@ -690,19 +690,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="addons">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="groups">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="inqcontrolnum">
 		<type name="integer" length="9"/>
 	</column>
 	<column name="membercodestatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="suppressionstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="SubjectReply.fileSinceDt">
 		<type name="date" length="10"/>
@@ -720,37 +720,37 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="9"/>
 	</column>
 	<column name="calc.totalHighCredit.Code">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalHighCredit.Value">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalCurrentBalance.Code">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalCurrentBalance.Value">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalPastDueBalance.Code">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalPastDueBalance.Value">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.oldest">
 		<type name="date" length="10"/>
 	</column>
 	<column name="calc.totalOutstandingBalance.Code">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalOutstandingBalance.Value">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalScheduledPaymnts.Code">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalScheduledPaymnts.Value">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.mostRecentAcc">
 		<type name="date" length="10"/>
@@ -783,7 +783,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="9"/>
 	</column>
 	<column name="calc.mostRecentInqText">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="calc.totalDisputedAccounts">
 		<type name="integer" length="9"/>
@@ -804,43 +804,43 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="9"/>
 	</column>
 	<column name="ctErr.text">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.uniqueId">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.errorCode">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.errorText">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.exclusionCode">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.scoreID">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.score">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.reasonCode1">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.reasonCode2">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.reasonCode3">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.reasonCode4">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.derigIndicator">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="ficoRisk.systemDateTime">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="pk_nbki_report" type="pk-constr" table="dwh.nbki_report">
 		<columns names="report_id" ref-type="src-columns"/>
@@ -850,7 +850,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 <table name="nbki_idreply">
 	<schema name="dwh"/>
 	<role name="ps_owner"/>
-	<position x="20" y="680"/>
+	<position x="60" y="883"/>
 	<column name="report_id">
 		<type name="integer" length="0"/>
 	</column>
@@ -858,13 +858,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="disputedremarks">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatus">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputedstatustext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="filesincedt">
 		<type name="date" length="10"/>
@@ -873,19 +873,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="1"/>
 	</column>
 	<column name="idnum">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idtype">
 		<type name="integer" length="2"/>
 	</column>
 	<column name="idtypetext">
-		<type name="character varying" length="512"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="issueauthority">
-		<type name="character varying" length="160"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="issuecountry">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="issuedate">
 		<type name="date" length="10"/>
@@ -894,21 +894,15 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="serialnum">
-		<type name="character varying" length="32"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="seriesnumber">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="suppressflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
-
-<constraint name="fk_nbki_idreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
-	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_idreply">
-	<columns names="report_id" ref-type="src-columns"/>
-	<columns names="report_id" ref-type="dst-columns"/>
-</constraint>
 
 <constraint name="fk_nbki_personreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
 	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_personreply">
@@ -966,6 +960,12 @@ CAUTION: Do not modify this file unless you know what you are doing.
 
 <constraint name="fk_nbki_account___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
 	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_account">
+	<columns names="report_id" ref-type="src-columns"/>
+	<columns names="report_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="fk_nbki_idreply___nbki_report" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="dwh.nbki_report" table="dwh.nbki_idreply">
 	<columns names="report_id" ref-type="src-columns"/>
 	<columns names="report_id" ref-type="dst-columns"/>
 </constraint>

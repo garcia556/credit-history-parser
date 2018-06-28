@@ -1,5 +1,6 @@
 $script = <<SCRIPT
 sed -i "s/PasswordAuthentication/#PasswordAuthentication/" /etc/ssh/sshd_config
+sed -i "s/#PermitRootLogin yes/PermitRootLogin yes/"  /etc/ssh/sshd_config
 sed -i "s/PermitRootLogin prohibit-password/PermitRootLogin yes/"  /etc/ssh/sshd_config
 echo root:root | chpasswd
 service sshd restart
@@ -7,7 +8,7 @@ SCRIPT
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/bionic64"
   config.disksize.size = "50GB"
 
   config.vm.hostname = "chparser"

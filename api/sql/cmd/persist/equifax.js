@@ -8,52 +8,52 @@ root.response =
 `insert into dwh.eqf_response
 values
 (
-	default,							-- 1
-	$(application_id),					-- 2
+	default,													-- 1
+	$(application_id),											-- 2
 
-	$(version),							-- 3
-	$(partnerid),						-- 4
-	to_timestamp($(datetime), 'DD.MM.YYYY HH24:MI:SS'),	-- 5
+	$(version),													-- 3
+	$(partnerid),												-- 4
+	to_timestamp($(datetime), 'DD.MM.YYYY HH24:MI:SS'),			-- 5
 
-	$(num),									-- 6
-	to_date($(dateofreport), 'DD.MM.YYYY'),	-- 7
-	$(report_type),							-- 8
+	$(num),														-- 6
+	to_date($(dateofreport), 'DD.MM.YYYY'),						-- 7
+	$(report_type),												-- 8
 
-	$(responsecode),					-- 9
-	$(responsestring),					-- 10
+	$(responsecode),											-- 9
+	$(responsestring),											-- 10
 
-	$(title_part___private___lastname),		-- 11
-	$(title_part___private___firstname),	-- 12
-	$(title_part___private___middlename),	-- 13
+	$(title_part___private___lastname),							-- 11
+	$(title_part___private___firstname),						-- 12
+	$(title_part___private___middlename),						-- 13
 	to_date($(title_part___private___birthday), 'DD.MM.YYYY'),	-- 14
-	$(title_part___private___birthplace),	-- 15
-	$(title_part___private___inn),			-- 16
-	$(title_part___private___pfno),			-- 17
-	$(title_part___private___driverno),		-- 18
-	$(title_part___private___medical),		-- 19
+	$(title_part___private___birthplace),						-- 15
+	$(title_part___private___inn),								-- 16
+	$(title_part___private___pfno),								-- 17
+	$(title_part___private___driverno),							-- 18
+	$(title_part___private___medical),							-- 19
 
-	$(base_part___addr_reg),				-- 20
-	$(base_part___addr_fact),				-- 21
+	$(base_part___addr_reg),									-- 20
+	$(base_part___addr_fact),									-- 21
 
 	$(base_part___pboul___pboul_no),							-- 22
 	to_date($(base_part___pboul___pboul_date), 'DD.MM.YYYY'),	-- 23
 	$(base_part___pboul___pboul_place),							-- 24
 
-	$(add_part___interest___hour),			-- 25
-	$(add_part___interest___day),			-- 26
-	$(add_part___interest___week),			-- 27
-	$(add_part___interest___month),			-- 28
-	$(add_part___interest___quarter),		-- 29
-	$(add_part___interest___year),			-- 30
+	$(add_part___interest___hour),								-- 25
+	$(add_part___interest___day),								-- 26
+	$(add_part___interest___week),								-- 27
+	$(add_part___interest___month),								-- 28
+	$(add_part___interest___quarter),							-- 29
+	$(add_part___interest___year),								-- 30
 
-	$(add_part___own_interest___hour),		-- 31
-	$(add_part___own_interest___day),		-- 32
-	$(add_part___own_interest___week),		-- 33
-	$(add_part___own_interest___month),		-- 34
-	$(add_part___own_interest___quarter),	-- 35
-	$(add_part___own_interest___year),		-- 36
+	$(add_part___own_interest___hour),							-- 31
+	$(add_part___own_interest___day),							-- 32
+	$(add_part___own_interest___week),							-- 33
+	$(add_part___own_interest___month),							-- 34
+	$(add_part___own_interest___quarter),						-- 35
+	$(add_part___own_interest___year),							-- 36
 
-	$(attrs)							-- 37
+	$(attrs)													-- 37
 )
 returning
 	response_id`;

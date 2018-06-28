@@ -48,11 +48,11 @@ ALTER SEQUENCE dwh.sq_eqf_response OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_doc CASCADE;
 CREATE TABLE dwh.eqf_doc(
 	response_id integer NOT NULL,
-	doctype varchar(2),
-	docno varchar(20),
-	docdate varchar(10),
-	docenddate varchar(10),
-	docplace varchar(255)
+	doctype text,
+	docno text,
+	docdate text,
+	docenddate text,
+	docplace text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_doc OWNER TO ps_owner;
@@ -63,14 +63,14 @@ ALTER TABLE dwh.eqf_doc OWNER TO ps_owner;
 CREATE TABLE dwh.eqf_history_title(
 	response_id integer,
 	date date,
-	lastname varchar(50),
-	firstname varchar(50),
-	middlename varchar(50),
-	"doc.doctype" varchar(2),
-	"doc.docno" varchar(20),
+	lastname text,
+	firstname text,
+	middlename text,
+	"doc.doctype" text,
+	"doc.docno" text,
 	"doc.docdate" date,
 	"doc.docenddate" date,
-	"doc.docplace" varchar(255)
+	"doc.docplace" text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_history_title OWNER TO ps_owner;
@@ -81,7 +81,7 @@ ALTER TABLE dwh.eqf_history_title OWNER TO ps_owner;
 CREATE TABLE dwh.eqf_history_addr_reg(
 	response_id integer NOT NULL,
 	date date,
-	value varchar(500)
+	value text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_history_addr_reg OWNER TO ps_owner;
@@ -91,21 +91,21 @@ ALTER TABLE dwh.eqf_history_addr_reg OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_credit CASCADE;
 CREATE TABLE dwh.eqf_credit(
 	response_id integer NOT NULL,
-	cred_id varchar(15),
+	cred_id text,
 	cred_first_load date,
-	cred_owner varchar(1),
-	cred_partner_type varchar(10),
+	cred_owner text,
+	cred_partner_type text,
 	cred_person_num integer,
-	cred_person_status varchar(1),
+	cred_person_status text,
 	cred_sum decimal(15,2),
-	cred_currency varchar(3),
+	cred_currency text,
 	cred_date date,
 	cred_enddate date,
 	cred_sum_payout decimal(15,2),
 	cred_date_payout date,
 	cred_sum_debt decimal(15,2),
 	cred_sum_limit decimal(15,2),
-	cred_facility varchar(1),
+	cred_facility text,
 	delay5 integer,
 	delay30 integer,
 	delay60 integer,
@@ -114,14 +114,14 @@ CREATE TABLE dwh.eqf_credit(
 	cred_sum_overdue decimal(15,2),
 	cred_day_overdue integer,
 	cred_max_overdue decimal(15,2),
-	cred_prolong varchar(15),
-	cred_enddate_fact varchar(10),
-	cred_collateral varchar(1),
+	cred_prolong text,
+	cred_enddate_fact text,
+	cred_collateral text,
 	cred_update date,
-	cred_type varchar(2),
-	cred_active varchar(1),
+	cred_type text,
+	cred_active text,
 	cred_active_date date,
-	cred_sum_type varchar(1)
+	cred_sum_type text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_credit OWNER TO ps_owner;
@@ -131,9 +131,9 @@ ALTER TABLE dwh.eqf_credit OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_addr_request CASCADE;
 CREATE TABLE dwh.eqf_addr_request(
 	response_id integer NOT NULL,
-	type varchar(4),
+	type text,
 	date date,
-	value varchar(500)
+	value text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_addr_request OWNER TO ps_owner;
@@ -143,9 +143,9 @@ ALTER TABLE dwh.eqf_addr_request OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_phone CASCADE;
 CREATE TABLE dwh.eqf_phone(
 	response_id integer NOT NULL,
-	type varchar(10),
+	type text,
 	date date,
-	value varchar(20)
+	value text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_phone OWNER TO ps_owner;
@@ -155,8 +155,8 @@ ALTER TABLE dwh.eqf_phone OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_court CASCADE;
 CREATE TABLE dwh.eqf_court(
 	response_id integer,
-	cred_id varchar(15),
-	info varchar(1500)
+	cred_id text,
+	info text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_court OWNER TO ps_owner;
@@ -166,8 +166,8 @@ ALTER TABLE dwh.eqf_court OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_official CASCADE;
 CREATE TABLE dwh.eqf_official(
 	response_id integer,
-	cred_id varchar(15),
-	info varchar(1500)
+	cred_id text,
+	info text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_official OWNER TO ps_owner;
@@ -177,8 +177,8 @@ ALTER TABLE dwh.eqf_official OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_bankruptcy CASCADE;
 CREATE TABLE dwh.eqf_bankruptcy(
 	response_id integer,
-	cred_id varchar(15),
-	info varchar(1500)
+	cred_id text,
+	info text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_bankruptcy OWNER TO ps_owner;
@@ -188,13 +188,13 @@ ALTER TABLE dwh.eqf_bankruptcy OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_info_request CASCADE;
 CREATE TABLE dwh.eqf_info_request(
 	response_id integer NOT NULL,
-	request_reason varchar(20),
-	timeslot varchar(20),
-	cred_type varchar(2),
-	cred_currency varchar(3),
-	cred_sum varchar(20),
-	cred_duration varchar(20),
-	cred_partner_type varchar(10)
+	request_reason text,
+	timeslot text,
+	cred_type text,
+	cred_currency text,
+	cred_sum text,
+	cred_duration text,
+	cred_partner_type text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_info_request OWNER TO ps_owner;
@@ -204,13 +204,13 @@ ALTER TABLE dwh.eqf_info_request OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_scoring CASCADE;
 CREATE TABLE dwh.eqf_scoring(
 	response_id integer,
-	scor_id varchar(20),
-	scor_card_id varchar(15),
-	scor_name varchar(255),
+	scor_id text,
+	scor_card_id text,
+	scor_name text,
 	score integer,
-	scor_error varchar(15),
-	scor_error_text varchar(255),
-	scor_reason varchar(3)
+	scor_error text,
+	scor_error_text text,
+	scor_reason text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_scoring OWNER TO ps_owner;
@@ -220,7 +220,7 @@ ALTER TABLE dwh.eqf_scoring OWNER TO ps_owner;
 -- DROP TABLE IF EXISTS dwh.eqf_check CASCADE;
 CREATE TABLE dwh.eqf_check(
 	response_id integer,
-	element varchar(50)
+	element text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_check OWNER TO ps_owner;
@@ -231,7 +231,7 @@ ALTER TABLE dwh.eqf_check OWNER TO ps_owner;
 CREATE TABLE dwh.eqf_history_addr_fact(
 	response_id integer NOT NULL,
 	date date,
-	value varchar(500)
+	value text
 );
 -- ddl-end --
 ALTER TABLE dwh.eqf_history_addr_fact OWNER TO ps_owner;
@@ -242,28 +242,28 @@ ALTER TABLE dwh.eqf_history_addr_fact OWNER TO ps_owner;
 CREATE TABLE dwh.eqf_response(
 	response_id integer NOT NULL DEFAULT nextval('dwh.sq_eqf_response'::regclass),
 	application_id integer NOT NULL,
-	version varchar(3),
-	partnerid varchar(3),
+	version text,
+	partnerid text,
 	datetime timestamp,
-	num varchar(15),
+	num text,
 	dateofreport date,
-	report_type varchar(15),
-	responsecode varchar(3),
-	responsestring varchar(255),
-	"title_part.private.lastname" varchar(50),
-	"title_part.private.firstname" varchar(50),
-	"title_part.private.middlename" varchar(50),
+	report_type text,
+	responsecode text,
+	responsestring text,
+	"title_part.private.lastname" text,
+	"title_part.private.firstname" text,
+	"title_part.private.middlename" text,
 	"title_part.private.birthday" date,
-	"title_part.private.birthplace" varchar(255),
-	"title_part.private.inn" varchar(12),
-	"title_part.private.pfno" varchar(11),
-	"title_part.private.driverno" varchar(10),
-	"title_part.private.medical" varchar(10),
-	"base_part.addr_reg" varchar(500),
-	"base_part.addr_fact" varchar(500),
-	"base_part.pboul.pboul_no" varchar(15),
+	"title_part.private.birthplace" text,
+	"title_part.private.inn" text,
+	"title_part.private.pfno" text,
+	"title_part.private.driverno" text,
+	"title_part.private.medical" text,
+	"base_part.addr_reg" text,
+	"base_part.addr_fact" text,
+	"base_part.pboul.pboul_no" text,
 	"base_part.pboul.pboul_date" date,
-	"base_part.pboul.pboul_place" varchar(255),
+	"base_part.pboul.pboul_place" text,
 	"add_part.interest.hour" integer,
 	"add_part.interest.day" integer,
 	"add_part.interest.week" integer,

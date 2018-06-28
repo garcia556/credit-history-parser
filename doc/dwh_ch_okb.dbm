@@ -157,64 +157,64 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="checkother1">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother2">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother3">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother4">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother5">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother6">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother7">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother8">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother9">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother10">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother11">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother12">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother13">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother14">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother15">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother16">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother17">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother18">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother19">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="checkother20">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="consumerenquirycountlast12month">
 		<type name="integer" length="3"/>
@@ -244,28 +244,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="worstcurrentpaystatusguarantor">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worstcurrentpaystatusjoint">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worstcurrentpaystatusowner">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worstcurrentpaystatusreferee">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worsteverpaystatusguarantor">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worsteverpaystatusjoint">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worsteverpaystatusowner">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worsteverpaystatusreferee">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -300,7 +300,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="accountpaymenthistory">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accountbalance">
 		<type name="integer" length="15"/>
@@ -315,7 +315,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="15"/>
 	</column>
 	<column name="paymentsource">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -335,13 +335,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="name">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idnumber">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="currentpreviousindicator">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdate">
 		<type name="timestamp" length="8"/>
@@ -350,37 +350,37 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="flatnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="housenbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="buildingnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line1">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line2">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line3">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line4">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="regioncode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="postcode">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="country">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="telephonenumber">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -392,40 +392,40 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="type">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="addresscurrprev">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="flatnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="housenbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="buildingnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line1">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line2">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line3">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line4">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="regioncode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="postcode">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="country">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdate">
 		<type name="timestamp" length="8"/>
@@ -434,7 +434,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="hometelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -446,25 +446,25 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="courtjudgementorder">
-		<type name="character varying" length="60"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="courtname">
-		<type name="character varying" length="200"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofjudgement">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="judgementtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="resolution">
-		<type name="character varying" length="2000"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amountofrecovery">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="currency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -496,7 +496,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="warrantypaymenthistorystatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="warrantyarrearsbalance">
 		<type name="integer" length="15"/>
@@ -511,28 +511,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="lienagreementnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lieneename">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralid">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralname">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateraladdress">
-		<type name="character varying" length="200"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralestimatedvalue">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="collateralcurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="collateralestimatedate">
 		<type name="timestamp" length="8"/>
@@ -553,10 +553,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="lienreasonforclosure">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="liencomments">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -571,7 +571,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="asscomment">
-		<type name="character varying" length="2000"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -583,22 +583,22 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="guaragreementnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guarantorname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guarcoveredamount">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="guarcoveredamountcurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guaramount">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="guaramountcurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guaropendate">
 		<type name="timestamp" length="8"/>
@@ -610,7 +610,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="guarreasonforclosure">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -638,40 +638,40 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="type">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="addresscurrprev">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="flatnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="housenbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="buildingnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line1">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line2">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line3">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line4">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="regioncode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="postcode">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="country">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdate">
 		<type name="timestamp" length="8"/>
@@ -680,7 +680,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="hometelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -692,61 +692,61 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="idchangesource">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idchangedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="idtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="idplaceofissue">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idexpirydate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="idstatus">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="pensionnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="surname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name1">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name2">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofbirth">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="placeofbirth">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="sex">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="judgementtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="newidnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="comments">
-		<type name="character varying" length="2000"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -766,10 +766,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="streamid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="typeofdecision">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofdecision">
 		<type name="timestamp" length="8"/>
@@ -778,16 +778,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="decisionreason">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="decisionamount">
-		<type name="character varying" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="currency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="comments">
-		<type name="character varying" length="256"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -807,13 +807,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="name">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="idnumber">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="currentpreviousindicator">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdate">
 		<type name="timestamp" length="8"/>
@@ -822,43 +822,43 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="timewithemployer">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="flatnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="housenbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="buildingnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line1">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line2">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line3">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line4">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="regioncode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="postcode">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="country">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worktelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="workmobiletelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -870,40 +870,40 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="addresstype">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="addressflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="flatnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="housenbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="buildingnbr">
-		<type name="character varying" length="6"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line1">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line2">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line3">
-		<type name="character varying" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="line4">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="regioncode">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="postcode">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="country">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="startdate">
 		<type name="timestamp" length="8"/>
@@ -912,10 +912,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="timeataddress">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="hometelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -927,7 +927,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="status">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -951,7 +951,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="20"/>
 	</column>
 	<column name="pvs.status">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_root_pk" type="pk-constr" table="dwh.okb_root">
 		<columns names="root_id" ref-type="src-columns"/>
@@ -969,10 +969,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="accountclass">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="consumeraccountnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="opendate">
 		<type name="timestamp" length="8"/>
@@ -981,13 +981,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="3"/>
 	</column>
 	<column name="currency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="financetype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="purposeoffinance">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amountoffinance">
 		<type name="integer" length="9"/>
@@ -999,19 +999,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="3"/>
 	</column>
 	<column name="durationunit">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="instalment">
 		<type name="integer" length="9"/>
 	</column>
 	<column name="paymentfrequency">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="typeofsecurity">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="insuredloan">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amountinsuredloan">
 		<type name="integer" length="9"/>
@@ -1020,10 +1020,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="decimal" length="4" precision="3"/>
 	</column>
 	<column name="creditfacilitystatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accountpaymentstatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="outstandingbalance">
 		<type name="integer" length="9"/>
@@ -1050,16 +1050,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="reasonforclosure">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accountspecialstatus">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="lastmissedpaymentdate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="recordblockdisputeindicator">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateaccountadded">
 		<type name="timestamp" length="14"/>
@@ -1071,19 +1071,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="subscribercomments">
-		<type name="character varying" length="250"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accountholdercomments">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="worstpaymentstatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="totalamountoffinance">
-		<type name="character varying" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="securedamount">
-		<type name="character varying" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="securitystartdate">
 		<type name="timestamp" length="8"/>
@@ -1095,19 +1095,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="sourceofpayment">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="applicationnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="infopartflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cbrfinancetype">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="legalaccountnumber">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="totalcostoffinanceinpercent">
 		<type name="decimal" length="4" precision="3"/>
@@ -1128,100 +1128,100 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="accountholdertype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name1">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name2">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name3">
 		<type name="text" length="0"/>
 	</column>
 	<column name="surname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidplaceofissue">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidexpiry">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="secondaryidplaceofissue">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidexpiry">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="secondaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="pensionnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbrissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="privateentrepreneuregrn">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouspassportnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="aliasname">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouscompanyname">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="sex">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofbirth">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="placeofbirth">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="nationality">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="consentflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateconsentgiven">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="mobiletelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_cais_consumer_pk" type="pk-constr" table="dwh.okb_cais_consumer">
 		<columns names="cais_consumer_id" ref-type="src-columns"/>
@@ -1239,16 +1239,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="warrantyagreementnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accfinancetype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="acccbrfinancetype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="acccurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="accamountoffinance">
 		<type name="integer" length="15"/>
@@ -1293,7 +1293,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="warrantypaymentstatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="warrantyarrearsbalance">
 		<type name="integer" length="15"/>
@@ -1302,13 +1302,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="warrantyreasonforclosure">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="legalwarrantyagreementnumber">
-		<type name="character varying" length="80"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="subscribercomments">
-		<type name="character varying" length="250"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_cais_consumer_warranty_pk" type="pk-constr" table="dwh.okb_cais_consumer_warranty">
 		<columns names="cais_consumer_warranty_id" ref-type="src-columns"/>
@@ -1326,22 +1326,22 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="guaragreementnumber">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guarantorname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guarcoveredamount">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="guarcoveredamountcurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guaramount">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="guaramountcurrency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guaropendate">
 		<type name="timestamp" length="8"/>
@@ -1353,7 +1353,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="guarreasonforclosure">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="guarnumofholders">
 		<type name="integer" length="2"/>
@@ -1383,97 +1383,97 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="accountholdertype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name1">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name2">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="surname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidplaceofissue">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidexpiry">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="secondaryidplaceofissue">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidexpiry">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="secondaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="pensionnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbrissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="privateentrepreneuregrn">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouspassportnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="aliasname">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouscompanyname">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="sex">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofbirth">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="placeofbirth">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="nationality">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="consentflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateconsentgiven">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="mobiletelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_guar_consumer_pk" type="pk-constr" table="dwh.okb_guar_consumer">
 		<columns names="guar_consumer_id" ref-type="src-columns"/>
@@ -1491,13 +1491,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="accountclass">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="streamid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="reason">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="enquirydate">
 		<type name="timestamp" length="8"/>
@@ -1506,19 +1506,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="3"/>
 	</column>
 	<column name="purposeoffinance">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="applicationnumber">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="applicationdate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="financetype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="currency">
-		<type name="character varying" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="creditlimit">
 		<type name="integer" length="15"/>
@@ -1536,28 +1536,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="3"/>
 	</column>
 	<column name="durationunits">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="instalmentamount">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="paymentfrequency">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="typeofsecurity">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="disputeindicator">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="comments">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="applicationchannel">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cbrfinancetype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_caps_pk" type="pk-constr" table="dwh.okb_caps">
 		<columns names="caps_id" ref-type="src-columns"/>
@@ -1575,52 +1575,52 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="applicanttype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name1">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name2">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="name3">
 		<type name="text" length="0"/>
 	</column>
 	<column name="surname">
-		<type name="character varying" length="150"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofbirth">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="placeofbirth">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="aliasname">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouscompanyname">
-		<type name="character varying" length="40"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="sex">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="nationality">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="consentflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateconsentgiven">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidexpiry">
 		<type name="timestamp" length="8"/>
@@ -1629,16 +1629,16 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="primaryidissueplace">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidtype">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryid">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidexpiry">
 		<type name="timestamp" length="8"/>
@@ -1647,94 +1647,94 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="secondaryidissueplace">
-		<type name="character varying" length="30"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="secondaryidauthority">
-		<type name="character varying" length="100"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="drivinglicensenbr">
-		<type name="character varying" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="medicalnbr">
-		<type name="character varying" length="25"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="pensionnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="privateentrepreneurnbrissuedate">
 		<type name="timestamp" length="8"/>
 	</column>
 	<column name="privateentrepreneuregrn">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="previouspassportnbr">
-		<type name="character varying" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryincome">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="primaryincomefreq">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="primaryincomeflag">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="otherincome">
 		<type name="integer" length="15"/>
 	</column>
 	<column name="residentialstatus">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupation">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="occupationstatus">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="maritalstatus">
-		<type name="character varying" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="numberofdependants">
 		<type name="integer" length="3"/>
 	</column>
 	<column name="education">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="mobiletelnbr">
-		<type name="character varying" length="16"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="mobileregistration">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="visaccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="mastercardccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dinersccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="amexpressccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="jcbccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="debitccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="chqgteeccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="retailccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="otherccheld">
-		<type name="character varying" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<constraint name="okb_caps_consumer_pk" type="pk-constr" table="dwh.okb_caps_consumer">
 		<columns names="caps_consumer_id" ref-type="src-columns"/>
@@ -1752,7 +1752,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="9"/>
 	</column>
 	<column name="field">
-		<type name="character varying" length="24"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="path">
 		<type name="text" length="0"/>

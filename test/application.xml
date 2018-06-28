@@ -3,7 +3,7 @@
 	<main>
 	</main>
 	<credit_history>
-		<equifax>
+		<!--equifax>
 <![CDATA[
 
 ]]>
@@ -17,6 +17,6 @@
 <![CDATA[
 
 ]]>
-		</okb>
+		</okb-->
 	</credit_history>
 </message>

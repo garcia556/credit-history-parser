@@ -35,19 +35,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="doctype">
-		<type name="varchar" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="docno">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="docdate">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="docenddate">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="docplace">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -62,19 +62,19 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="lastname">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="firstname">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="middlename">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="doc.doctype">
-		<type name="varchar" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="doc.docno">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="doc.docdate">
 		<type name="date" length="10"/>
@@ -83,7 +83,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="doc.docplace">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -98,7 +98,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="value">
-		<type name="varchar" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -110,28 +110,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="cred_id">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_first_load">
 		<type name="date" length="10"/>
 	</column>
 	<column name="cred_owner">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_partner_type">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_person_num">
 		<type name="integer" length="3"/>
 	</column>
 	<column name="cred_person_status">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_sum">
 		<type name="decimal" length="15" precision="2"/>
 	</column>
 	<column name="cred_currency">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_date">
 		<type name="date" length="10"/>
@@ -152,7 +152,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="decimal" length="15" precision="2"/>
 	</column>
 	<column name="cred_facility">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="delay5">
 		<type name="integer" length="10"/>
@@ -179,28 +179,28 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="decimal" length="15" precision="2"/>
 	</column>
 	<column name="cred_prolong">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_enddate_fact">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_collateral">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_update">
 		<type name="date" length="10"/>
 	</column>
 	<column name="cred_type">
-		<type name="varchar" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_active">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_active_date">
 		<type name="date" length="10"/>
 	</column>
 	<column name="cred_sum_type">
-		<type name="varchar" length="1"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -212,13 +212,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="type">
-		<type name="varchar" length="4"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="date">
 		<type name="date" length="10"/>
 	</column>
 	<column name="value">
-		<type name="varchar" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -230,13 +230,13 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="type">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="date">
 		<type name="date" length="10"/>
 	</column>
 	<column name="value">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -248,10 +248,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="cred_id">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="info">
-		<type name="varchar" length="1500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -263,10 +263,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="cred_id">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="info">
-		<type name="varchar" length="1500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -278,10 +278,10 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="cred_id">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="info">
-		<type name="varchar" length="1500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -293,25 +293,25 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="request_reason">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="timeslot">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_type">
-		<type name="varchar" length="2"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_currency">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_sum">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_duration">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="cred_partner_type">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -323,25 +323,25 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="scor_id">
-		<type name="varchar" length="20"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="scor_card_id">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="scor_name">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="score">
 		<type name="integer" length="20"/>
 	</column>
 	<column name="scor_error">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="scor_error_text">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="scor_reason">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -353,7 +353,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="element">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -368,7 +368,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="date" length="10"/>
 	</column>
 	<column name="value">
-		<type name="varchar" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 </table>
 
@@ -383,70 +383,70 @@ CAUTION: Do not modify this file unless you know what you are doing.
 		<type name="integer" length="0"/>
 	</column>
 	<column name="version">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="partnerid">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="datetime">
 		<type name="timestamp" length="19"/>
 	</column>
 	<column name="num">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="dateofreport">
 		<type name="date" length="10"/>
 	</column>
 	<column name="report_type">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="responsecode">
-		<type name="varchar" length="3"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="responsestring">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.lastname">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.firstname">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.middlename">
-		<type name="varchar" length="50"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.birthday">
 		<type name="date" length="10"/>
 	</column>
 	<column name="title_part.private.birthplace">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.inn">
-		<type name="varchar" length="12"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.pfno">
-		<type name="varchar" length="11"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.driverno">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="title_part.private.medical">
-		<type name="varchar" length="10"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="base_part.addr_reg">
-		<type name="varchar" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="base_part.addr_fact">
-		<type name="varchar" length="500"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="base_part.pboul.pboul_no">
-		<type name="varchar" length="15"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="base_part.pboul.pboul_date">
 		<type name="date" length="10"/>
 	</column>
 	<column name="base_part.pboul.pboul_place">
-		<type name="varchar" length="255"/>
+		<type name="text" length="0"/>
 	</column>
 	<column name="add_part.interest.hour">
 		<type name="integer" length="15"/>
